@@ -7,8 +7,10 @@
 
 We begin our study of algorithms with the problem of sorting a sequence of numbers into nondecreasing order. 
 ## Formal Definition of the Sorting Problem:
-Input: a sequence of n numbers ()
-Output: A permutation (reordering) () of the input sequence s.t. .
+Input: a sequence of n numbers (a1, a2, ..., an)
+Output: A permutation (reordering) (a1', a2', ..., an') of the input sequence s.t. 
+a1' <= a2' <= ... <= an'.
+
 ## Insertion Sort
 An efficient algorithm for sorting a small number of elements. 
 The input numbers are sorted in place: the numbers are rearranged within the array A, with at most a constant number of them stored outside the array at any time. 
@@ -52,7 +54,7 @@ The divide and conquer paradigm involves three at each level of recursion:
 3. Combine the solution to the subproblems into a solution for the original problem
 
 
-Case Study - Merge Sort:
+## Case Study - Merge Sort:
 1. Divide a sequence of n elements into two subsequences of n / 2 elements
 2. Conquer: sort the two subsequences recursively using merge sort 
 3. Combine: merge the two sorted subsequences to produce the sorted answer.
@@ -104,8 +106,8 @@ Merge (A, p, q, r):
 
 ### Recurrence of merge sort:
 T(n) = {
-	if n = 1: 
-	if n > 1: 
+	if n = 1: Big_theta(1): 
+	if n > 1: aT(n / b) + C(n) + D(n) 
 }
 
 Recall for analyzing divide and conquer algorithms we have:, 
