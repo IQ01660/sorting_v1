@@ -1,4 +1,4 @@
-# Introduction - Chapter 1
+# Sorting Algorithms
 ## Contents
 1. Insertion Sort
 2. Selection Sort
